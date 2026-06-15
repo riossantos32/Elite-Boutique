@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bg2" x1="0" x2="1">
+      <stop offset="0%" stop-color="#070707" />
+      <stop offset="100%" stop-color="#16221e" />
+    </linearGradient>
+  </defs>
+  <rect width="100%" height="100%" fill="url(#bg2)" />
+  <g transform="translate(90,60)">
+    <rect width="620" height="420" rx="12" fill="#080808" opacity="0.6" />
+    <g transform="translate(160,50) scale(0.95)">
+      <path d="M140 20 L170 20 C190 20, 200 40, 190 60 L170 110 L130 110 L110 60 C100 40, 110 20, 130 20 Z" fill="#2b1a16" stroke="#c59552" stroke-width="3"/>
+      <rect x="118" y="118" width="84" height="8" rx="4" fill="#1f1513" />
+    </g>
+    <text x="310" y="380" fill="#d4af37" font-size="20" font-family="Arial, Helvetica, sans-serif" text-anchor="middle" font-weight="700">Chaquetas • Caballero</text>
+  </g>
+</svg>

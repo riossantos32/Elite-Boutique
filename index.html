@@ -3,124 +3,143 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eli Boutique | Ropa Americana Premium</title>
+    <title>Ellie's Boutique | Ropa Premium</title>
     <link rel="stylesheet" href="style.css">
-    <!-- Iconos desde CDN para estética profesional -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 
-    <!-- Encabezado / Navegación -->
-    <header class="main-header">
-        <div class="header-container">
-            <div class="logo">ELI <span>BOUTIQUE</span></div>
-            <nav class="nav-menu">
-                <a href="#inicio">Inicio</a>
-                <a href="#colecciones">Colecciones</a>
-                <a href="#contacto">Contacto</a>
+    <!-- Header: nombre de la boutique -->
+    <header class="header" role="banner">
+        <div class="container header-container">
+            <div class="brand">Ellie's <span class="brand-accent">Boutique</span></div>
+            <nav class="nav" role="navigation" aria-label="Navegación principal">
+                <ul class="nav-list">
+                    <li><a class="nav-link" href="#inicio">Inicio</a></li>
+                    <li><a class="nav-link" href="#catalog">Catálogo</a></li>
+                    <li><a class="nav-link" href="#contact">Contacto</a></li>
+                </ul>
             </nav>
         </div>
     </header>
 
-    <!-- Sección Hero (Presentación Principal) -->
-    <section id="inicio" class="hero-section">
-        <div class="hero-content">
-            <span class="tagline">✨ Calidad • Exclusividad • Estilo ✨</span>
-            <h1>Moda Americana Premium Seleccionada</h1>
-            <p>Renueva tu guardarropa con piezas únicas de las mejores marcas. Calidad superior garantizada para toda la familia.</p>
-            <a href="#colecciones" class="btn-primary">↓ Ver Catálogo Destacado</a>
-        </div>
-    </section>
+    <main>
+        <!-- HERO -->
+        <section id="inicio" class="hero" aria-label="Hero principal">
+            <div class="hero-inner container">
+                <div class="hero-copy">
+                    <p class="eyebrow">Ellie's Boutique · Managua, Nicaragua</p>
+                    <h1 class="hero-title">Estilo exclusivo para momentos memorables</h1>
+                    <p class="hero-lead">Curamos piezas premium para quienes buscan elegancia minimalista. Visítanos en nuestra tienda física o contáctanos por WhatsApp.</p>
+                    <div class="hero-cta">
+                        <a href="#catalog" class="btn btn-primary">Explorar Colección</a>
+                        <a href="#contact" class="btn btn-outline">Visítanos</a>
+                    </div>
+                </div>
 
-    <!-- Sección de Beneficios / Valores -->
-    <section class="features-section">
-        <div class="features-grid">
-            <div class="feature-card">
-                <i class="fas fa-gem"></i>
-                <h3>Calidad Premium</h3>
-                <p>Cada prenda pasa por un estricto filtro de selección física para asegurar un estado impecable.</p>
+                    <div class="hero-media" role="img" aria-label="Imagen principal de la colección">
+                        <div class="hero-image">
+                            <img class="hero-image-img" src="assets/hero.svg" alt="Imagen principal de la colección">
+                        </div>
+                    </div>
             </div>
-            <div class="feature-card">
-                <i class="fas fa-star"></i>
-                <h3>Piezas Únicas</h3>
-                <p>No repetimos estilos en masa. Lo que vistes es verdaderamente exclusivo y diferente.</p>
+        </section>
+
+        <!-- CATALOGO -->
+        <section id="catalog" class="catalog" aria-label="Catálogo destacado">
+            <div class="container">
+                <header class="section-header">
+                    <h2>Colecciones Destacadas</h2>
+                    <p class="muted">Piezas seleccionadas semanalmente. Pregunta por tallas y disponibilidad.</p>
+                </header>
+
+                <div class="catalog-grid">
+                    <article class="card">
+                        <figure class="card-media" aria-hidden="true">
+                            <img src="assets/item-1.svg" alt="Línea Damas">
+                        </figure>
+                        <div class="card-body">
+                            <h3 class="card-title">Línea Damas</h3>
+                            <p class="card-text">Vestidos y blusas premium con corte atemporal.</p>
+                            <a class="card-cta btn btn-ghost" href="#contact">Consultar</a>
+                        </div>
+                    </article>
+
+                    <article class="card">
+                        <figure class="card-media" aria-hidden="true">
+                            <img src="assets/item-2.svg" alt="Línea Caballeros">
+                        </figure>
+                        <div class="card-body">
+                            <h3 class="card-title">Línea Caballeros</h3>
+                            <p class="card-text">Camisas, chaquetas y básicos de alta calidad.</p>
+                            <a class="card-cta btn btn-ghost" href="#contact">Consultar</a>
+                        </div>
+                    </article>
+
+                                        <article class="card">
+                                                <figure class="card-media" aria-hidden="true">
+                                                        <!-- Inline SVG fallback para evitar problemas de carga externa -->
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600" preserveAspectRatio="xMidYMid slice">
+                                                            <defs>
+                                                                <linearGradient id="g4" x1="0" x2="1">
+                                                                    <stop offset="0%" stop-color="#0b0b0b" />
+                                                                    <stop offset="100%" stop-color="#2b1511" />
+                                                                </linearGradient>
+                                                            </defs>
+                                                            <rect width="100%" height="100%" fill="url(#g4)" />
+                                                            <text x="50%" y="50%" text-anchor="middle" fill="#d4af37" font-size="36" font-family="Arial, Helvetica, sans-serif" font-weight="700">Accesorios & Calzado</text>
+                                                        </svg>
+                                                </figure>
+                        <div class="card-body">
+                            <h3 class="card-title">Accesorios & Calzado</h3>
+                            <p class="card-text">Bolsos y calzado seleccionados por diseño y estado.</p>
+                            <a class="card-cta btn btn-ghost" href="#contact">Ver</a>
+                        </div>
+                    </article>
+                </div>
             </div>
-            <div class="feature-card">
-                <i class="fas fa-calendar-check"></i>
-                <h3>Atención Diaria</h3>
-                <p>Abierto de lunes a domingo frente al Paseo de la Amistad para tu comodidad.</p>
+        </section>
+
+        <!-- CONTACTO: usar el enlace de Google Maps proporcionado -->
+        <section id="contact" class="contact" aria-label="Contacto y ubicación">
+            <div class="container contact-grid">
+                <div class="contact-card">
+                    <h2>Visítanos</h2>
+                    <p class="contact-text">Ellie's Boutique</p>
+                    <p class="contact-text">Dirección: Managua, Nicaragua</p>
+                    <p class="contact-text">Coordenadas: 12.1499642, -86.2150551</p>
+                    <p class="contact-text">Horario: Lunes - Domingo · 10:00 - 19:00</p>
+                    <p><a href="https://www.google.com/maps/place/Ellie%E2%80%99s+Boutique/@12.1387026,-86.5324979,11.47z/data=!4m10!1m2!2m1!1sEli+Boutique+!3m6!1s0x8f715532918ec92b:0xab231b626ff0da6!8m2!3d12.1499642!4d-86.2150551!15sCgxFbGkgQm91dGlxdWVaDiIMZWxpIGJvdXRpcXVlkgEOY2xvdGhpbmdfc3RvcmWaASNDaFpEU1VoTk1HOW5TMFZKUTBGblNVUklkRjkxWTA5bkVBReABAPoBBAgAECc!16s%252Fg%252F11swdzj5gl?entry=ttu&g_ep=EgoyMDI2MDYxMC4wIKXMDSoASAFQ" target="_blank" rel="noopener noreferrer">Ver en Google Maps</a></p>
+                    <a href="#" class="btn btn-primary" id="btn-whatsapp">Contactar por WhatsApp</a>
+                </div>
+
+                <div class="map-card">
+                    <div class="map-placeholder">Imagen / iframe de Google Maps (reemplazar si desea)</div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer" role="contentinfo">
+        <div class="container footer-inner">
+            <div class="footer-left">
+                <p>&copy; <span id="year">2026</span> Ellie's Boutique. Todos los derechos reservados.</p>
+            </div>
+            <div class="footer-right">
+                <p class="muted">Síguenos: <span class="accent">Instagram</span> · <span class="accent">Facebook</span></p>
             </div>
         </div>
-    </section>
-
-    <!-- Sección de Colecciones (Grid Dinámico) -->
-    <section id="colecciones" class="collections-section">
-        <h2 class="section-title">Nuestros Ingresos Semanales</h2>
-        <p class="section-subtitle">Nuevas piezas llegando constantemente. Pregunta por disponibilidad de tallas en tiempo real</p>
-        
-        <div class="collections-grid">
-            <!-- Tarjeta 1 -->
-            <div class="collection-item">
-                <div class="img-placeholder">
-                    <img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=900&q=80" alt="Moda dama Elite Boutique">
-                </div>
-                <div class="item-info">
-                    <h3>👗 Línea Damas</h3>
-                    <p>Vestidos, blusas, pantalones y calzado casual de marcas reconocidas. Estilos para cada ocasión.</p>
-                    <button class="btn-whatsapp-query" data-item="Línea Damas">Consultar Estilos</button>
-                </div>
-            </div>
-            <!-- Tarjeta 2 -->
-            <div class="collection-item">
-                <div class="img-placeholder">
-                    <img src="https://images.unsplash.com/photo-1521335629791-ce4aec67ddaf?auto=format&fit=crop&w=900&q=80" alt="Moda caballeros Elite Boutique">
-                </div>
-                <div class="item-info">
-                    <h3>👔 Línea Caballeros</h3>
-                    <p>Camisas de vestir, jeans premium, polos y chaquetas exclusivas de alta calidad.</p>
-                    <button class="btn-whatsapp-query" data-item="Línea Caballeros">Consultar Estilos</button>
-                </div>
-            </div>
-            <!-- Tarjeta 3 -->
-            <div class="collection-item">
-                <div class="img-placeholder">
-                    <img src="https://images.unsplash.com/photo-1516707570263-9fdf9d0e4f11?auto=format&fit=crop&w=900&q=80" alt="Calzado y accesorios Elite Boutique">
-                </div>
-                <div class="item-info">
-                    <h3>👟 Calzado & Accesorios</h3>
-                    <p>Zapatos deportivos, casuales y bolsas seleccionadas por su excelente estado y diseño.</p>
-                    <button class="btn-whatsapp-query" data-item="Calzado y Accesorios">Ver Disponibles</button>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Sección de Ubicación y Contacto -->
-    <section id="contacto" class="contact-section">
-        <div class="contact-container">
-            <div class="contact-info">
-                <h2>Visítanos o Escríbenos</h2>
-                <p>Disfruta de una experiencia familiar y amigable eligiendo tus prendas favoritas.</p>
-                <div class="info-list">
-                    <p><i class="fas fa-map-marker-alt"></i> Frente al Paseo de la Amistad, Somoto</p>
-                    <p><i class="fas fa-clock"></i> Lunes a Domingo - Horarios flexibles</p>
-                    <p><i class="fas fa-phone"></i> Únicamente por WhatsApp</p>
-                </div>
-                <a href="#" id="btn-main-whatsapp" class="btn-whatsapp"><i class="fab fa-whatsapp"></i> Chat Directo de Ventas</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="main-footer">
-        <p>&copy; 2026 Elite Boutique. Todos los derechos reservados. | Diseño Moderno & Responsivo</p>
     </footer>
 
-    <!-- Botón Flotante de WhatsApp -->
-    <a href="#" id="whatsapp-floating" class="whatsapp-float" title="Chat con nosotros">
-        <i class="fab fa-whatsapp"></i>
+    <!-- Botón flotante de WhatsApp (colocar número real en href si se desea) -->
+    <a href="#" class="whatsapp" aria-label="WhatsApp" id="whatsapp-floating" title="Chat con nosotros">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M20.52 3.48C18.07 0.99 14.66 0 11.31 0 5.07 0 .22 4.85.22 11.09c0 1.95.52 3.86 1.5 5.55L0 24l7.6-1.98c1.63.9 3.5 1.38 5.41 1.38 6.24 0 11.09-4.85 11.09-11.09 0-3.35-0.99-6.76-3.58-9.83z" fill="#ffffff" opacity="0.06"/>
+            <path d="M17.53 14.49c-.3-.15-1.78-.88-2.05-.98-.27-.1-.47-.15-.67.15-.2.3-.77.98-.95 1.19-.18.2-.36.22-.66.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.12-.61.12-.12.27-.3.4-.45.13-.15.17-.25.27-.42.1-.17.05-.32-.02-.47-.07-.15-.67-1.62-.92-2.22-.24-.58-.48-.5-.66-.51-.17-.01-.37-.01-.57-.01-.2 0-.52.07-.8.32-.27.25-1.04 1.02-1.04 2.48 0 1.45 1.06 2.85 1.21 3.05.15.2 2.08 3.28 5.05 4.6 2.97 1.32 2.97.88 3.5.82.52-.06 1.69-.69 1.93-1.36.24-.67.24-1.24.17-1.36-.07-.12-.27-.2-.57-.35z" fill="#d4af37"/>
+        </svg>
     </a>
 
-    <script src="script.js"></script>
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
 </body>
 </html>
